@@ -2,6 +2,7 @@
 
 /**
  * File: printf.c
+ *
  * Description: A C program that prints a string
  * Return: The program should return 0.
 */
