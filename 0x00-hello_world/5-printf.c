@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * File: 5-printf.c
- * Description: A C program that prints the string "with proper grammar, but the outcome is a piece of art,"
- * using the printf function. The program should return 0 and compile without warnings when using the -Wall gcc option.
+ * File: printf.c
+ * Description: A C program that prints a string
+ * Return: The program should return 0.
 */
 
 int main(void)
