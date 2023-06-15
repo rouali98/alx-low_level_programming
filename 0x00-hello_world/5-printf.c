@@ -3,7 +3,7 @@
 /**
  * main -  printf.c
  *
- * Description: A C program that prints a string
+ * Description: A C program that prints a string.
  * Return: The program should return 0.
 */
 int main(void)
