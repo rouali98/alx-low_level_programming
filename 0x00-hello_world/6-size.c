@@ -2,6 +2,7 @@
 
 /**
  * main - size.c
+ *
  * Description: A C program that prints the size of various types.
  * Return: The program should return 0.
 */
