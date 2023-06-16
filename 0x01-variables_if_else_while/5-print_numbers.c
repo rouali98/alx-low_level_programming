@@ -13,5 +13,5 @@ int main(void)
 	while (i <= 57)
 		putchar(i++);
 	putchar('\n');
-	return (0);	
+	return (0);
 }
