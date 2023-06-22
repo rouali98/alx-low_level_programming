@@ -3,11 +3,18 @@
 /**
  * main - Entry point
  * Description: 'prints a string'
- * Return: Always 0 (Success)
+ * Return: Program should return 0.
  */
 
 int main(void)
 {
-  printf("_putchar\n");
-  return (0);
+	int i = 0;
+	char *str = "_putchar\n";
+
+	while (str[i])
+	{
+		putchar(str[i]);
+		i++;
+	}
+	return (0);
 }
