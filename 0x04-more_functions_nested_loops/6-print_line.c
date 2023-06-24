@@ -4,7 +4,7 @@
  *print_line - print numbers from 0 to 14 ten times
  *@n: variable
  *Return: nothing
- */
+*/
 
 void print_line(int n)
 {

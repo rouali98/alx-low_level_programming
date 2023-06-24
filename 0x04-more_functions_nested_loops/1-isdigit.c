@@ -5,7 +5,7 @@
  * _isdigit - prints the alphabet in lowercase
  * @c: the variable
  * Return: 1 || 0
- */
+*/
 
 int _isdigit(int c)
 {

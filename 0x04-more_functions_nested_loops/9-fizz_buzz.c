@@ -3,7 +3,7 @@
 /**
  *main - the main program
  *Return: nothing
- */
+*/
 
 int main(void)
 {

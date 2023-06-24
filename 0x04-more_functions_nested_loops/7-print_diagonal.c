@@ -4,7 +4,7 @@
  *print_diagonal- print number
  *@n: variable
  *Return: nothing
- */
+*/
 
 void print_diagonal(int n)
 {
