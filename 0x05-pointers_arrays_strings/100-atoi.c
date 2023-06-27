@@ -12,17 +12,15 @@ int _atoi(char *s)
 	unsigned int res = 0;
 	int sign = 1;
 
-	while (s[i] && (s[i] == ' ' || (s[i] >= 9 && s[i] <= 13))
-		i++;
-	if (s[i] == '-' || s[i] == '+')
+	while (s[i] && !(s[i] >= '0' && s[i] <= '9'))
 	{
 		if (s[i] == '-')
 			sign *= -1;
 		i++;
 	}
-	while (s[i] && (s[i] >= '0' && s[i] <= '9')
+	while (s[i] && (s[i] >= '0' && s[i] <= '9'))
 	{
-		res = res * 10 + str[i] - '0';
+		res = (res * 10) + (s[i] - '0');
 		i++;
 	}
 	return (res * sign);
