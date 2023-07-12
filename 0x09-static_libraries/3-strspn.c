@@ -26,15 +26,15 @@ int char_str(char *s, char c)
  * @accept: variable
  * Return: return s or NULL
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
+
 	unsigned int i = 0;
 
 	while (s[i])
 	{
 		if (!char_str(accept, s[i]))
-			break ;
+			break;
 		i++;
 	}
 	return (i);

@@ -29,6 +29,7 @@ int char_str(char *s, char c)
 
 char *_strpbrk(char *s, char *accept)
 {
+
 	unsigned int i = 0;
 
 	while (s[i])

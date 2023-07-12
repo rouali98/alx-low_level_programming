@@ -1,6 +1,5 @@
 #include "main.h"
 #include <unistd.h>
-
 /**
  *_puts -  a string
  *@str: variable
