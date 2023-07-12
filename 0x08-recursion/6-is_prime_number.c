@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 
-/* By EMOHAMEDD */
+/* By rouali */
 
 /**
  * is_prime - The Function
@@ -19,7 +19,7 @@ int is_prime(int n, int i)
 		return (is_prime(n, i + 1));
 	return (0);
 }
-/* By EMOHAMEDD */
+/* By rouali */
 
 /**
  * is_prime_number - The Function

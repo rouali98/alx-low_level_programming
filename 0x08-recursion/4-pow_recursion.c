@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <stdio.h>
 
-/* Created BY @EMOHAMEDD */
+/* Created BY @rouali */
 /**
  * _pow_recursion - prints
  * @x: var
