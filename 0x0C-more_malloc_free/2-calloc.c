@@ -33,8 +33,8 @@ void	*_memset(void *ptr, int value, size_t total_size)
 
 /**
  * _calloc - The Function
- * @nmemb:  The variable
- * @size:  The variable
+ * @nmemb: The variable
+ * @size: The variable
  * Return: The Return value/void
 */
 
