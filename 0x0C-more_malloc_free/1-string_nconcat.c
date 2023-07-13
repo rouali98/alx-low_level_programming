@@ -8,16 +8,15 @@
  * _strlen - The Function
  * @s:  The variable
  * Return: The Return value/void
- */
+*/
+
 unsigned int	_strlen(char *s)
 {
 	unsigned int	i;
 
 	i = 0;
 	while (s[i])
-	{
 		i++;
-	}
 	return (i);
 }
 
@@ -52,7 +51,7 @@ char	*string_nconcat(char *s1, char *s2, unsigned int n)
 		size = len1 + len2 + 1;
 	else
 		size = len1 + n + 1;
-	concat = malloc(sizeof(char) * (len1 + n + 1));
+	concat = malloc(sizeof(char) * size);
 	if (!concat)
 		return (NULL);
 	i = 0;
