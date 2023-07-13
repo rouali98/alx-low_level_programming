@@ -9,11 +9,11 @@
  * @s:  The variable
  * Return: The Return value/void
  */
-
-unsigned int  _strlen(char *s)
+unsigned int	_strlen(char *s)
 {
-	unsigned int i = 0;
+	unsigned int	i;
 
+	i = 0;
 	while (s[i])
 	{
 		i++;
@@ -24,24 +24,25 @@ unsigned int  _strlen(char *s)
 /* Created BY ROUALI */
 
 /**
- * _strlen - The Function
- * @s:  The variable
+ * string_nconcat - The Function
+ * @s1: The variable
+ * @s2: The variable
+ * @n: The variable
  * Return: The Return value/void
-*/
-
+ */
 char	*string_nconcat(char *s1, char *s2, unsigned int n)
 {
+	unsigned int	i;
+	unsigned int	j;
 	unsigned int	len1;
 	unsigned int	len2;
 	char			*concat;
-	unsigned int	i;
-	unsigned int	j;
 
 	len1 = 0;
 	len2 = 0;
-	if (s1 == NULL)
+	if (!s1)
 		s1 = "";
-	if (s2 == NULL)
+	if (!s2)
 		s2 = "";
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
@@ -55,7 +56,7 @@ char	*string_nconcat(char *s1, char *s2, unsigned int n)
 		concat[i++] = s1[i++];
 	j = 0;
 	while (j < n)
-		concat[i++] = s2[j++];
-	concat[i] = '\0';
+		concat[i + j++] = s2[j++];
+	concat[i + j] = '\0';
 	return (concat);
 }
