@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* Created BY ROUALI */
+
+/**
+ * array_range - The Function
+ * @min:  The variable
+ * @max:  The variable
+ * Return: The Return value/void
+*/
+
 int	*array_range(int min, int max)
 {
 	int	*arr;

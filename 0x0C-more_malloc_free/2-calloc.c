@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* Created BY ROUALI */
+
+/**
+ * _calloc - The Function
+ * @nmemb:  The variable
+ * @size:  The variable
+ * Return: The Return value/void
+*/
+
 void	*_calloc(unsigned int nmemb, unsigned int size)
 {
 	void			*ptr;

@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* Created BY ROUALI */
+
+/**
+ * _strlen - The Function
+ * @s:  The variable
+ * Return: The Return value/void
+*/
+
 char	*string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	len1;
