@@ -29,13 +29,15 @@ unsigned int	_strlen(char *s)
  * @s2: The variable
  * @n: The variable
  * Return: The Return value/void
- */
+*/
+
 char	*string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;
 	unsigned int	j;
 	unsigned int	len1;
 	unsigned int	len2;
+	unsigned int	size;
 	char			*concat;
 
 	len1 = 0;
@@ -47,9 +49,9 @@ char	*string_nconcat(char *s1, char *s2, unsigned int n)
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	if (n >= len2)
-		n = len2;
+		size = len1 + len2 + 1;
 	else
-		n = len1;
+		size = len1 + n + 1;
 	concat = malloc(sizeof(char) * (len1 + n + 1));
 	if (!concat)
 		return (NULL);
