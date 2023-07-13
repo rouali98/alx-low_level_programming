@@ -9,7 +9,7 @@
  * _calloc - The Function
  * @nmemb: The variable
  * @size: The variable
- * Return: The Return value/char *
+ * Return: The Return value/void
 */
 
 void	*_calloc(unsigned int nmemb, unsigned int size)
