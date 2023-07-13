@@ -8,7 +8,7 @@
 /**
  * _memset - Fills a block of memory with a particular value
  * @ptr: Pointer to the memory block
- * @value: Value to be set (treated as unsigned char)
+ * @value: Value to be set (treated as char)
  * @total_size: Total size of the memory block in bytes
  * 
  * Return: Pointer to the memory block (ptr)
@@ -16,14 +16,14 @@
 
 void	*_memset(void *ptr, int value, size_t total_size)
 {
-	unsigned char	*p;
+	char	*p;
 	size_t			i;
 
 	i = 0;
-	p = (unsigned char *)ptr;
+	p = (char *)ptr;
 	while (i < total_size)
 	{
-		p[i] = (unsigned char)value;
+		p[i] = (char)value;
 		i++;
 	}
 	return (ptr);
