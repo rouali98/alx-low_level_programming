@@ -18,6 +18,7 @@ void	*_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int	i;
 	unsigned int	total_size;
 
+	i = 0;
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	total_size = nmemb * size;
