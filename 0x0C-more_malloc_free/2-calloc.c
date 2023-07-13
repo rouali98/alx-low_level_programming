@@ -16,8 +16,8 @@
 
 void	*_memset(void *ptr, int value, size_t total_size)
 {
-	char	*p;
-	size_t			i;
+	char			*p;
+	unsigned int	i;
 
 	i = 0;
 	p = (char *)ptr;
