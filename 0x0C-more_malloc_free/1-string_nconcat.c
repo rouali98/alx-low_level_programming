@@ -48,14 +48,16 @@ char	*string_nconcat(char *s1, char *s2, unsigned int n)
 	len2 = _strlen(s2);
 	if (n >= len2)
 		n = len2;
+	else
+		n = len1;
 	concat = malloc(sizeof(char) * (len1 + n + 1));
 	if (!concat)
 		return (NULL);
 	i = 0;
-	while (i < len1)
+	while (s1[i])
 		concat[i++] = s1[i++];
 	j = 0;
-	while (j < n)
+	while (s2[j] && j < n)
 	{
 		concat[i + j] = s2[j];
 		j++;
