@@ -6,41 +6,16 @@
 /* Created BY ROUALI */
 
 /**
- * _memset - Fills a block of memory with a particular value
- * @ptr: Pointer to the memory block
- * @value: Value to be set (treated as char)
- * @total_size: Total size of the memory block in bytes
- * 
- * Return: Pointer to the memory block (ptr)
-*/
-
-void	*_memset(void *ptr, int value, unsigned int total_size)
-{
-	char			*p;
-	unsigned int	i;
-
-	i = 0;
-	p = (char *)ptr;
-	while (i < total_size)
-	{
-		p[i] = (char)value;
-		i++;
-	}
-	return (ptr);
-}
-
-/* Created BY ROUALI */
-
-/**
  * _calloc - The Function
  * @nmemb: The variable
  * @size: The variable
- * Return: The Return value/void
+ * Return: The Return value/char *
 */
 
 void	*_calloc(unsigned int nmemb, unsigned int size)
 {
-	void			*ptr;
+	char			*ptr;
+	unsigned int	i;
 	unsigned int	total_size;
 
 	if (nmemb == 0 || size == 0)
@@ -49,6 +24,10 @@ void	*_calloc(unsigned int nmemb, unsigned int size)
 	ptr = malloc(total_size);
 	if (!ptr)
 		return (NULL);
-	_memset(ptr, 0, total_size);
+	while (i < total_size)
+	{
+		ptr[i] = 0;
+		i++;
+	}
 	return (ptr);
 }
