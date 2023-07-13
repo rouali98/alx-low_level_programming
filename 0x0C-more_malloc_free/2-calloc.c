@@ -14,7 +14,7 @@
  * Return: Pointer to the memory block (ptr)
 */
 
-void	*_memset(void *ptr, int value, size_t total_size)
+void	*_memset(void *ptr, int value, unsigned int total_size)
 {
 	char			*p;
 	unsigned int	i;
