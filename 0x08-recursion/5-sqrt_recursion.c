@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 
-/* By rouali */
+/* Created BY ROUALI */
 
 /**
  * natural_sqr - The Function
@@ -21,7 +21,7 @@ int natural_sqr(int n, int i)
 	return (natural_sqr(n, i + 1));
 }
 
-/* By rouali */
+/* Created BY ROUALI */
 
 /**
  * _sqrt_recursion - The Function

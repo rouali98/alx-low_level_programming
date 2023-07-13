@@ -1,6 +1,8 @@
 #include "main.h"
 #include <unistd.h>
 
+/* Created BY ROUALI */
+
 /**
  *_puts_recursion - prints a chess board
  *@s: an array of pointers
