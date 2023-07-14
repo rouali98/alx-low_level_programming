@@ -50,31 +50,23 @@ void	errors(void)
 	exit(98);
 }
 
+/* Created BY ROUALI */
+
 /**
- * main - multiplies two positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
- *
- * Return: always 0 (Success)
+  * multiply - performs multiplication of two numbers
+  * @s1: first number as a string
+  * @s2: second number as a string
 */
 
-int	main(int argc, char *argv[])
+void	multiply(char *s1, char *s2)
 {
-	char	*s1;
-	char	*s2;
-
-	struct mul;
 	mul.a = 0;
-	s1 = argv[1];
-	s2 = argv[2];
-	if (argc != 3 || !_is_digit(s1) || !_is_digit(s2))
-		errors();
 	mul.len1 = _strlen(s1);
 	mul.len2 = _strlen(s2);
 	mul.len = mul.len1 + mul.len2 + 1;
 	mul.result = malloc(sizeof(int) * mul.len);
 	if (!mul.result)
-		return (1);
+		exit(1);
 	mul.i = 0;
 	while (mul.i <= mul.len1 + mul.len2)
 		mul.result[mul.i++] = 0;
@@ -109,5 +101,27 @@ int	main(int argc, char *argv[])
 		_putchar('0');
 	_putchar('\n');
 	free(mul.result);
+}
+
+/**
+  * main - main function call
+  * @argc: argument count
+  * @argv: 2D array of arguments
+  * Return: return 0 on success
+*/
+
+int	main(int argc, char *argv[])
+{
+	char	*s1;
+	char	*s2;
+
+	s1 = argv[1];
+	s2 = argv[2];
+	if (argc != 3 || !_is_digit(s1) || !_is_digit(s2))
+	{
+		write(1, "Error\n", 6);
+		return (1);
+	}
+	multiply(s1, s2);
 	return (0);
 }
