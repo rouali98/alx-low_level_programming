@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <unistd.h>
+#include <stdio.h>
 
 /* Created BY ROUALI */
 
@@ -30,7 +30,8 @@ int	_isdigit(char *argv)
   * _atoi - converts a string of ascii digits to the values they represent
   * @s: pointer to the source string
   * Return: value of digits
-  */
+*/
+
 int	_atoi(char *s)
 {
 	int	i;
