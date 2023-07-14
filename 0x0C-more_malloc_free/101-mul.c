@@ -42,7 +42,7 @@ int _strlen(char *s)
 /**
  * errors - handles errors for main
  */
-void _errors(void)
+void errors(void)
 {
 	write(1, "Error\n", 6);
 	exit(98);
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
-		_errors();
+		errors();
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	len = len1 + len2 + 1;
