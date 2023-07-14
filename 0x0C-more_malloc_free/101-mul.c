@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+/* Created BY ROUALI */
+
+/**
+ * main - multiply 2 numbers as arguments
+ * @argc: number of arguments
+ * @argv: arguments
+ * Return: 0 success
+*/
+
 void	multiply(const char *num1, const char *num2)
 {
 	int		mul;
