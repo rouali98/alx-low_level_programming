@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -24,6 +23,7 @@ int	_isdigit(char *argv)
 	}
 	return (0);
 }
+
 /* Created BY ROUALI */
 
 /**
@@ -32,19 +32,19 @@ int	_isdigit(char *argv)
   * Return: value of digits
 */
 
-int	_atoi(char *s)
+int	_atoi(char *str)
 {
 	int	i;
 	int	result;
 
 	result = 0;
 	i = result;
-	while (s[i])
+	while (str[i])
 	{
-		if (s[i] >= '0' && s[i] <= '9')
+		if (str[i] >= '0' && str[i] <= '9')
 		{
 			result *= 10;
-			result += (s[i] - '0');
+			result += (str[i] - '0');
 		}
 		i++;
 	}
