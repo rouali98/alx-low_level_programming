@@ -1,19 +1,8 @@
 #ifndef MAIN_H
 # define MAIN_H
 
-struct s_multip
-{
-	int	len1;
-	int	len2;
-	int	len;
-	int	i;
-	int	carry;
-	int	digit1;
-	int	digit2;
-	int	*result;
-	int	a;
-
-} mul;
+#include <stdio.h>
+#include <stdlib.h>
 
 void	_putchar(char c);
 
