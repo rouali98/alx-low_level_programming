@@ -5,6 +5,7 @@
 
 # include <stdio.h>
 # include "3-calc.h"
+# include "function_pointers.h"
 
 void	print_name(char *name, void (*f)(char *));
 
