@@ -1,6 +1,8 @@
 #include <stddef.h>
 #include "3-calc.h"
 
+/* Created BY ROUALI */
+
 int (*get_op_func(char *s))(int, int)
 {
 	int	i;
