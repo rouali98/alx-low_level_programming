@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include "3-calc.h"
 
+/**
+ * main - Entry point of the program.
+ * @argc: The number of command-line arguments.
+ * @argv: An array containing the command-line arguments.
+ *
+ * Return: 0 on success, or specific error codes on failure.
+*/
+
 int	main(int argc, char *argv[])
 {
 	int	a;
