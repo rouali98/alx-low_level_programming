@@ -1,77 +1,61 @@
 #include "3-calc.h"
 
-/* Created BY ROUALI */
-
 /**
- * op_add - this function adds two numbers
- * @a:the first number
- * @b:the second number.
-(* a blank line
-* Description: this function adds two numbers)?
-(* section header: 3-calc.h)*
-* Return: return the result of the add.
-*/
-int op_add(int a, int b)
+ * op_add - Adds two integers
+ * @a: The first integer
+ * @b: The second integer
+ *
+ * Return: The sum of the two integers
+ */
+int	op_add(int a, int b)
 {
 	return (a + b);
 }
+
 /**
- * op_sub - this function sub two numbers
- * @a:the first number
- * @b:the second number.
-(* a blank line
-* Description: this function sub two numbers)?
-(* section header: 3-calc.h)*
-* Return: return the result of the sub.
+ * op_sub - Subtracts two integers
+ * @a: The first integer
+ * @b: The second integer
+ *
+ * Return: The difference between the two integers
  */
-int op_sub(int a, int b)
+int	op_sub(int a, int b)
 {
 	return (a - b);
 }
+
 /**
- * op_mul - this function multiply two numbers
- * @a:the first number
- * @b:the second number.
-(* a blank line
-* Description: this function multiply two numbers)?
-(* section header: 3-calc.h)*
-* Return: return the result of the multiply.
-*/
-int op_mul(int a, int b)
+ * op_mul - Multiplies two integers
+ * @a: The first integer
+ * @b: The second integer
+ *
+ * Return: The product of the two integers
+ */
+int	op_mul(int a, int b)
 {
 	return (a * b);
 }
+
 /**
- * op_div - this function divide two numbers
- * @a:the first number
- * @b:the second number.
-(* a blank line
-* Description: this function divide two numbers)?
-(* section header: 3-calc.h)*
-* Return: return the result of the divide.
+ * op_div - Divides two integers
+ * @a: The first integer (dividend)
+ * @b: The second integer (divisor)
+ *
+ * Return: The result of the division or 0 if b is 0
  */
-int op_div(int a, int b)
+int	op_div(int a, int b)
 {
-	if (b != 0)
-		return (a / b);
-	printf("Error\n");
-	exit(100);
+	return (b == 0 ? 0 : a / b);
 }
+
 /**
- * op_mod - this function calcualte the module
- * @a:the first number
- * @b:the second number.
-(* a blank line
-* Description: this function calculate the module)?
-(* section header: 3-calc.h)*
-* Return: return the result of the module.
-*/
-int op_mod(int a, int b)
+ * op_mod - Calculates the remainder of the division of two integers
+ * @a: The first integer (dividend)
+ * @b: The second integer (divisor)
+ *
+ * Return: The remainder of the division or 0 if b is 0
+ */
+int	op_mod(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	return (a % b);
+	return (b == 0 ? 0 : a % b);
 }
