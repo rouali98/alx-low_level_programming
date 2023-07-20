@@ -1,12 +1,11 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - Prints anything.
- * @format: A list of types of arguments passed to the function.
- *
- * Description: Any argument not of type char, int, float, or char *
- * is ignored.
-*/
+ *print_all - prints anything
+ *@format: a list of types of arguments passed to the function
+ *@...: the arguments in hand
+ *Return: nothing
+ */
 
 void	print_all(const char *const format, ...)
 {
