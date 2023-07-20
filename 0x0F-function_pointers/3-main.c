@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include "3-calc.h"
 
+/* Created BY ROUALI */
+
 /**
  * main - performs simple operations
  * @argc: number of arguments

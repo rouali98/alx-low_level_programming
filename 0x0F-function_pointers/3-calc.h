@@ -1,17 +1,18 @@
 #ifndef _3_CALC_H_
 # define _3_CALC_H_
 
-/* Created BY ROUALI */
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
+/* Created BY ROUALI */
 
 /**
- * struct op - Struct op
+ * struct op - struct op
+ * @op: operator
+ * @f: function to perform
  *
- * @op: The operator
- * @f: The function associated
+ * Description: struct for function pointers
  */
 
 typedef struct op
