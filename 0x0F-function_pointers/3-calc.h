@@ -12,8 +12,7 @@
  * @op: The operator to be examined
  * @f: Pointer to the function corresponding to the operator
  *
- * Description: This structure represents an operator and its associated
- *              arithmetic operation function.
+ * Description: struct for function pointers
 */
 
 typedef struct op
