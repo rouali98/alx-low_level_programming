@@ -9,11 +9,10 @@
 
 /**
  * struct op - Struct op
- * @op: The operator to be examined
- * @f: Pointer to the function corresponding to the operator
  *
- * Description: struct for function pointers
-*/
+ * @op: The operator
+ * @f: The function associated
+ */
 
 typedef struct op
 {
