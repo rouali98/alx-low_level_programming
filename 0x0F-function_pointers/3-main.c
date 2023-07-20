@@ -10,31 +10,31 @@
  * Return: Always 0 (Success) or an error code (98, 99, 100)
 */
 
-int	main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int a, b;
-	int (*op_func)(int, int);
-	int result;
+	char *op;
+	int (*operation)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
 	}
 	a = atoi(argv[1]);
+	op = argv[2];
+	if (op[1])
+	{
+		printf("Error\n");
+		exit(99);
+	}
 	b = atoi(argv[3]);
-	op_func = get_op_func(argv[2]);
-	if (op_func == NULL)
+	operation = get_op_func(op);
+	if (!operation)
 	{
 		printf("Error\n");
-		return (99);
+		exit(99);
 	}
-	if ((*argv[2] == '/' || *argv[2] == '%') && b == 0)
-	{
-		printf("Error\n");
-		return (100);
-	}
-	result = op_func(a, b);
-	printf("%d\n", result);
+	printf("%d\n", operation(a, b));
 	return (0);
 }
