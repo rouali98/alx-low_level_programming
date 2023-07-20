@@ -1,19 +1,19 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - Prints anything based on the format provided.
+ * print_all - Prints anything, followed by a new line.
  * @format: A list of types of arguments passed to the function.
  *
- * Return: void
-*/
+ * Description: Any argument not of type char, integer, float,
+ *              or char * is ignored.
+ */
 
 void	print_all(const char *const format, ...)
 {
-	unsigned int	i;
+	unsigned int	i = 0;
 	char			*str;
 	va_list			list;
 
-	i = 0;
 	va_start(list, format);
 	while (format && format[i])
 	{
@@ -30,8 +30,7 @@ void	print_all(const char *const format, ...)
 				str = "(nil)";
 			printf("%s", str);
 		}
-		if (format[i + 1] && (format[i] == 'c' || \
-		format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
+		if (format[i + 1] && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
 			printf(", ");
 		i++;
 	}
