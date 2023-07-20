@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* Created BY ROUALI */
+
 /**
  * main - Entry point of the program
  * @argc: The number of command-line arguments
