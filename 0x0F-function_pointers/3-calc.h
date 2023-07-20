@@ -14,7 +14,7 @@
  *
  * Description: This structure represents an operator and its associated
  *              arithmetic operation function.
- */
+*/
 
 typedef struct op
 {
