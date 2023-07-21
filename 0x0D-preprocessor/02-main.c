@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char *file_name;
+	char	*file_name;
 
     file_name = __FILE__;
 	printf("%s\n", file_name);
