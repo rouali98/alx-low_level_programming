@@ -8,11 +8,11 @@
  * Return: Always 0.
 */
 
-int main(void)
+int	main(void)
 {
 	char	*file_name;
 
-    file_name = __FILE__;
+	file_name = __FILE__;
 	printf("%s\n", file_name);
 	return (0);
 }
